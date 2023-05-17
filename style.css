@@ -1,0 +1,151 @@
+nav ul {
+    list-style: none;
+    display: flex;
+    background-color: antiquewhite;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+}
+
+nav li {
+    margin: 0.5em 2em;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    color: gray;
+
+}
+
+#feature h2 {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.featured-class {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    width: 400px;
+    border: 3px solid antiquewhite;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    margin-top: 25px;
+}
+
+.featured-class:hover {
+    background-color: antiquewhite;
+    border-color: grey;
+    cursor: pointer;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav li:hover {
+    color: red;
+    background-color: white;
+}
+
+.featured-class button {
+    border: none;
+    background-color: grey;
+    color: antiquewhite;
+    border-radius: 8px;
+}
+
+.featured-class button:active {
+    transform: scale(1.5);
+    transition: all 1s;
+    margin-bottom: 6px;
+    
+    
+
+}
+
+.featured-class a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.featured-wraper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.top-to-bottom {
+    background-color: grey;
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    z-index: 10;
+    color: antiquewhite;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    justify-content: center;
+    font-size: 24px;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    cursor: pointer;
+    
+}
+
+.top-to-bottom:hover {
+    transform: translateY(-10px);
+    transition: all 500ms;
+}
+
+.top-to-bottom a{
+    text-decoration: none;
+    color: white;
+}
+
+
+#pro1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    
+    
+
+}
+#pro2 {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    
+    
+
+}
+
+#pro3 {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    
+    
+
+}
+
+h1{
+    text-align: center;
+}
+
+#aboutus h2 {
+    text-align: center;
+    margin-top:50px ;
+    margin-bottom: 25px;
+}

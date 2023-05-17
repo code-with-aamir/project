@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to cart</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+  <h1>Our Products</h1>
+    <div id="pro1">
+      <img src="pro1.jpg" width="500px" height="500px">
+        <h3>Bleu De Chanel</h3>
+        <p>Price: $10</p>
+        <button onclick="addToCart()">Add to Cart</button>
+        
+      </div>
+
+        <div id="pro2">
+          <img src="pro2.jpg" width="500px" height="500px">
+            <h3>Coco Noir</h3>
+            <p>Price: $20</p>
+            <button onclick="addToCart()">Add to Cart</button>
+            
+          </div>
+
+          <div id="pro3">
+            <img src="pro3.jpg" width="500px" height="500px">
+              <h3>Prada</h3>
+              <p>Price: $25</p>
+              <button onclick="addToCart()">Add to Cart</button>
+              
+            </div>
+      
+        
+      
+      
+</body>
+<script>
+    // Define a global variable to store the cart items
+var cartItems = [];
+
+// Function to add a product to the cart
+function addToCart() {
+  // Get the product details from the HTML elements
+  var productName = document.querySelector('h3').innerText;
+  var price = parseFloat(document.querySelector('p').innerText.split('$')[1]);
+
+  // Create a new cart item object
+  var item = {
+    name: productName,
+    price: price
+  };
+
+  // Add the item to the cart
+  cartItems.push(item);
+
+  // Optional: You can display a confirmation message to the user
+  alert('Product added to cart!');
+}
+
+</script>
+</html>
